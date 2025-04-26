@@ -4,9 +4,13 @@ import BestPokemon from "./bestPokemon.jsx";
 import CaughtPokemon from "./CaughtPokemon.jsx";
 
 function App() {
+  const logWhenClicked = () => {
+    console.log("Yayyyy!! Its Pokedex here");
+  };
+
   return (
     <div>
-      <Logo AppName="Priscilla's"></Logo>
+      <Logo AppName="Priscilla's" handleClick={logWhenClicked}></Logo>
 
       <BestPokemon
         abilities={["Anticipation", "Adaptability", "Run-Away"]}
